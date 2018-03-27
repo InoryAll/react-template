@@ -16,9 +16,11 @@ module.exports = {
   devServer: {
     contentBase: "./public",//本地服务器所加载的页面所在的目录
     historyApiFallback: true,//不跳转
-    inline: true,
-    hot: true,
-    port: 9000,
+    inline: true,//热加载配置
+    hot: true,//热加载配置
+    port: 9000,//端口号
+    host: 't.test.cn',//运行域名
+    overlay: true,//显示编译错误
   },
   module: {
     rules: [
